@@ -1,12 +1,12 @@
 <!-- AUTOGEN:STATS -->
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![Terminal](https://img.shields.io/badge/mac%20terminal-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000)](https://support.apple.com/guide/terminal/welcome/mac) [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/) 
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![Terminal](https://img.shields.io/badge/mac%20terminal-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000)](https://support.apple.com/guide/terminal/welcome/mac) [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
 
-[![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-02/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-02/graphs/traffic)
-[![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-02/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-02/actions/workflows/screenshot-and-visitor.yaml)
-[![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-02/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-js-hw-02)
-[![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-02/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-js-hw-02/blob/main/LICENSE)
+[![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-03/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-03/graphs/traffic)
+[![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-03/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-03/actions/workflows/screenshot-and-visitor.yaml)
+[![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-03/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-js-hw-03)
+[![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-03/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-js-hw-03/blob/main/LICENSE)
 
-## 📸 Скріншот проекту
+## 📸 Project Screenshot
 ![Project Screenshot](./assets/screenshot.png)
 <!-- END:AUTOGEN -->
 
@@ -20,138 +20,114 @@
 
 [SOLOLEARN](https://www.sololearn.com/certificates/CT-VJXN3HQH)
 
-# JavaScript Homework 02
+# JavaScript Homework 03
 
-## Task 1. Droid Orders
+## Task 1. Slug Generator
 
 **File:** `task-1.js`
 
-The repair droid sales station is ready to go, all that remains is to write the software for the sales department.
+Before solving the task, let's define a new term!
+The term slug is a human-readable unique identifier used in web development to create readable URLs.
+For example, instead of a user seeing mysite.com/posts/1q8fh74tx in the address bar, you can create a slug from the article title. As a result, the address will be more pleasant to perceive: mysite.com/posts/arrays-for-beginners.
 
-Declare the `makeTransaction(quantity, pricePerDroid, customerCredits)` function, which composes and returns a message about purchasing repair droids.
+A slug is always a lowercase string with words separated by hyphens.
+Got it? Now let's finally do the task!
 
-It declares three parameters, whose values will be set when calling it:
-- `quantity` — number of ordered droids
-- `pricePerDroid` — price of one droid
-- `customerCredits` — amount of funds in the customer's account
-
-Complete the function as follows:
-- Declare a variable to store the total order amount (total cost of all ordered droids) and assign it an expression to calculate this amount.
-- Add a check whether the customer can pay for the order:
-  - if the amount to be paid exceeds the number of credits in the customer's account, the function should return the string `"Insufficient funds!"`
-  - otherwise, the function should return the string `"You ordered <quantity> droids worth <totalPrice> credits!"`, where `<quantity>` is the number of ordered droids, and `<totalPrice>` is their total cost.
+Write a function `slugify(title)` that takes an article title, parameter `title`, and returns a slug created from this string.
+The value of the `title` parameter will be strings whose words are separated only by spaces.
+All slug characters must be lowercase.
+All slug words must be separated by hyphens.
 
 ### Test Code
 
-Add the following code after your function declaration to check its correctness:
+Add the following code after your function declaration to check its correctness. The console will display the results of its work.
 
 ```javascript
-console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
-console.log(makeTransaction(3, 1000, 15000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 5000, 8000)); // "Insufficient funds!"
-console.log(makeTransaction(8, 2000, 10000)); // "Insufficient funds!"
-console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 5000 credits!"
+console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
 ```
+
+Leave this code for mentor verification.
 
 ### Mentor Review Criteria
 
-- Declared function `makeTransaction(quantity, pricePerDroid, customerCredits)`
-- Calling `makeTransaction(5, 3000, 23000)` returns `"You ordered 5 droids worth 15000 credits!"`
-- Calling `makeTransaction(3, 1000, 15000)` returns `"You ordered 3 droids worth 3000 credits!"`
-- Calling `makeTransaction(10, 5000, 8000)` returns `"Insufficient funds!"`
-- Calling `makeTransaction(8, 2000, 10000)` returns `"Insufficient funds!"`
-- Calling `makeTransaction(10, 500, 5000)` returns `"You ordered 10 droids worth 5000 credits!"`
+- Declared function `slugify(title)`
+- Calling `slugify("Arrays for beginners")` returns `"arrays-for-beginners"`
+- Calling `slugify("English for developer")` returns `"english-for-developer"`
+- Calling `slugify("Ten secrets of JavaScript")` returns `"ten-secrets-of-javascript"`
+- Calling `slugify("How to become a JUNIOR developer in TWO WEEKS")` returns `"how-to-become-a-junior-developer-in-two-weeks"`
 
-## Task 2. Message Formatting
+## Task 2. Array Composition
 
 **File:** `task-2.js`
 
-Declare the `formatMessage(message, maxLength)` function, which takes a string (parameter `message`) and checks its length according to the given maximum length (parameter `maxLength`).
-
-Complete the function code so that:
-- If the string length is equal to or less than `maxLength`, then the function returns the original string unchanged.
-- If the length exceeds `maxLength`, then the function truncates the string to `maxLength` characters, adds ellipsis `"..."` at the end and returns the truncated version.
+Write a function called `makeArray` that takes three parameters: `firstArray` (array), `secondArray` (array), and `maxLength` (number). The function should create a new array that contains all elements from `firstArray`, and then all elements from `secondArray`.
+If the number of elements in the new array exceeds `maxLength`, the function should return a copy of the array with `maxLength` elements.
+Otherwise, the function should return the entire new array.
 
 ### Test Code
 
-Add the following code after your function declaration to check its correctness:
+Add the following code after your function declaration to check its correctness. The console will display the results of its work.
 
 ```javascript
-console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
-console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
-console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
-console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
 ```
+
+Leave this code for mentor verification.
 
 ### Mentor Review Criteria
 
-- Declared function `formatMessage(message, maxLength)`
-- Calling `formatMessage("Curabitur ligula sapien", 16)` returns `"Curabitur ligula..."`
-- Calling `formatMessage("Curabitur ligula sapien", 23)` returns `"Curabitur ligula sapien"`
-- Calling `formatMessage("Vestibulum facilisis purus nec", 20)` returns `"Vestibulum facilisis..."`
-- Calling `formatMessage("Vestibulum facilisis purus nec", 30)` returns `"Vestibulum facilisis purus nec"`
-- Calling `formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)` returns `"Nunc sed turpis..."`
-- Calling `formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)` returns `"Nunc sed turpis a felis in nunc fringilla"`
+- Declared function `makeArray(firstArray, secondArray, maxLength)`
+- Calling `makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)` returns `["Mango", "Poly", "Ajax"]`
+- Calling `makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)` returns `["Mango", "Poly", "Houston", "Ajax"]`
+- Calling `makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)` returns `["Mango", "Ajax", "Chelsea"]`
+- Calling `makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)` returns `["Earth", "Jupiter"]`
+- Calling `makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)` returns `["Earth", "Jupiter", "Neptune", "Uranus"]`
+- Calling `makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)` returns `[]`
+- Calling function `makeArray()` with random arrays and random number returns correct array
 
-## Task 3. Spam Check
+## Task 3. Number Array Filtering
 
 **File:** `task-3.js`
 
-The `checkForSpam(message)` function takes a string (parameter `message`), checks it for forbidden words `spam` and `sale`, and returns the check result. Words in the `message` parameter string can be in any case, for example `SPAM` or `sAlE`.
+Write a function `filterArray(numbers, value)` that takes an array of numbers (`numbers`) and a value (`value`) as parameters. The function should return a new array containing only those numbers from the `numbers` array that are greater than the `value`.
 
-Complete the function code so that:
-- If a forbidden word is found (`spam` or `sale`), then the function returns boolean `true`
-- If there are no forbidden words in the string, the function returns boolean `false`
+Inside the function:
+- Create an empty array to which you will add suitable numbers.
+- Use a loop to iterate through each element of the `numbers` array.
+- Use the conditional operator `if` inside the loop to check each element and add it to your array.
+- Return your new array with suitable numbers as a result.
 
 ### Test Code
 
-Add the following code after your function declaration to check its correctness:
+Add the following code after your function declaration to check its correctness. The console will display the results of its work.
 
 ```javascript
-console.log(checkForSpam("Latest technology news")); // false
-console.log(checkForSpam("JavaScript weekly newsletter")); // false
-console.log(checkForSpam("Get best sale offers now!")); // true
-console.log(checkForSpam("Amazing SalE, only tonight!")); // true
-console.log(checkForSpam("Trust me, this is not a spam message")); // true
-console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
-console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 ```
+
+Leave this code for mentor verification.
 
 ### Mentor Review Criteria
 
-- Declared function `checkForSpam(message)`
-- Calling `checkForSpam("Latest technology news")` returns `false`
-- Calling `checkForSpam("JavaScript weekly newsletter")` returns `false`
-- Calling `checkForSpam("Get best sale offers now!")` returns `true`
-- Calling `checkForSpam("Amazing SalE, only tonight!")` returns `true`
-- Calling `checkForSpam("Trust me, this is not a spam message")` returns `true`
-- Calling `checkForSpam("Get rid of sPaM emails. Our book in on sale!")` returns `true`
-- Calling `checkForSpam("[SPAM] How to earn fast money?")` returns `true`
-
-## Task 4. Product Delivery
-
-**File:** `task-4.js`
-
-Declare the `getShippingCost(country)` function, which should check the possibility of delivering goods to the user's country (parameter `country`) and return a message about the result. Be sure to use the `switch` statement.
-
-The format of the returned string is `"Shipping to <country> will cost <price> credits"`, where instead of `<country>` and `<price>` you need to substitute the corresponding values.
-
-List of countries and delivery cost:
-- China — 100 credits
-- Chile — 250 credits
-- Australia — 170 credits
-- Jamaica — 120 credits
-
-From the list you can see that delivery is not possible everywhere. If the specified country is not in the list, then the function should return the string `"Sorry, there is no delivery to your country"`.
-
-### Test Code
-
-Add the following code after your function declaration to check its correctness:
-
-```javascript
-console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"
+- Declared function `filterArray(numbers, value)`
+- Calling function `filterArray([1, 2, 3, 4, 5], 3)` returns `[4, 5]`
+- Calling function `filterArray([1, 2, 3, 4, 5], 4)` returns `[5]`
+- Calling function `filterArray([1, 2, 3, 4, 5], 5)` returns `[]`
+- Calling function `filterArray([12, 24, 8, 41, 76], 38)` returns `[41, 76]`
+- Calling function `filterArray([12, 24, 8, 41, 76], 20)` returns `[24, 41, 76]`
+- Calling function `filterArray()` with random array and number returns correct arrayost("Australia")); // "Shipping to Australia will cost 170 credits"
 console.log(getShippingCost("Germany")); // "Sorry, there is no delivery to your country"
 console.log(getShippingCost("China")); // "Shipping to China will cost 100 credits"
 console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credits"
